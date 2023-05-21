@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.caa1e540.css",
+    "main.js": "/static/js/main.e16c57de.js",
+    "static/js/787.70bb8c62.chunk.js": "/static/js/787.70bb8c62.chunk.js",
+    "static/media/image_processing20210312-16096-10yh46u.jpg": "/static/media/image_processing20210312-16096-10yh46u.0a3efb86dec14ca6dfe8.jpg",
+    "static/media/Matty.jpeg": "/static/media/Matty.d3b003a521300e2e8657.jpeg",
+    "static/media/Frederik.jpeg": "/static/media/Frederik.850f63cdb111eece96b7.jpeg",
+    "service-worker.js": "/service-worker.js",
+    "static/media/NLM-LOGO-HVID-no-text.png": "/static/media/NLM-LOGO-HVID-no-text.58c709859abf27c8b330.png",
+    "static/media/Mikkel.jpeg": "/static/media/Mikkel.b1e86db19e2ccbe595b2.jpeg",
+    "index.html": "/index.html",
+    "main.caa1e540.css.map": "/static/css/main.caa1e540.css.map",
+    "main.e16c57de.js.map": "/static/js/main.e16c57de.js.map",
+    "787.70bb8c62.chunk.js.map": "/static/js/787.70bb8c62.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.caa1e540.css",
+    "static/js/main.e16c57de.js"
+  ]
+}
