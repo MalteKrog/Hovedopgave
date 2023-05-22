@@ -10,7 +10,7 @@ const Tilvalg = () => {
     setOption(e.target.value)
   }
   return (
-    <div className='noselect tilvalg-animation'>
+    <section className='noselect tilvalg-animation'>
         <div className='tilvalgcard'>
             <input
             type="radio"
@@ -140,7 +140,7 @@ const Tilvalg = () => {
             </p>
         </div>
         
-    </div>
+    </section>
 
   )}
 

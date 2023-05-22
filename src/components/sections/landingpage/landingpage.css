@@ -44,7 +44,7 @@
 
 .path {
     fill:  transparent;
-    animation: dash 2s linear;
+    animation: dash 3s linear;
     animation-fill-mode: forwards;
     stroke-width: 1px;
     stroke-dasharray: 3000; 
@@ -78,7 +78,7 @@
 
 @keyframes dash {
     100% {
-        stroke-dashoffset: 100;
+        stroke-dashoffset: 0;
     }
 }
 
