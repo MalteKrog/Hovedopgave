@@ -1,146 +1,33 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './pakkeløsninger.css'
-import { TiTick } from 'react-icons/ti'
+import { IoIosAddCircle } from 'react-icons/io'
+import parse from 'html-react-parser'
 
 
-const Tilvalg = () => {
-    const [option, setOption] = useState("Startup")
+const Tilvalg = ({ tilvalg, setSsl, ssl, api, setApi, some, setSome, branding, setBranding, tekstForfatning, setTekstForfatning, logo, setLogo }) => {
 
-  const onOptionChange = e => {
-    setOption(e.target.value)
-  }
+
   return (
-    <section className='noselect tilvalg-animation'>
+    <div className='noselect tilvalg-animation'>
         <div className='tilvalgcard'>
-            <input
-            type="radio"
-            name="topping"
-            value="Startup"
-            id="startup"
-            checked={option === "Startup"}
-            onChange={onOptionChange}
-            />
-            <label htmlFor="startup" className='card-title'>Startup</label>
-            <div className='card-line'></div>
-            <div className='tilvalg'>
-                <TiTick className='TiTick'/>
-                <p>Hjemmeside med 1-3 undersider</p>
-            </div>
-            <div className='tilvalg'>
-                <TiTick className='TiTick'/>
-                <p>Udviklet prototype i Fgima</p>
-            </div>
-            <div className='tilvalg'>
-                <TiTick className='TiTick'/>
-                <p>Basic SEO pakke</p>
-            </div>
-            <div className='tilvalg'>
-                <TiTick className='TiTick'/>
-                <p>Hosting af hjemmeside</p>
-            </div>
-            <div className='tilvalg'>
-                <TiTick className='TiTick'/>
-                <p>6 Måneders vedligholdse og
-                    performance</p>
-            </div>
-            <div className='card-line'></div>
-            <button className='btn'>Vælg pakke</button>
+        <label className='label'>
+                <div className='tilvalg-card-header card-header'>
+                    <h5>{tilvalg.title.rendered}</h5>
+                    <p>{parse(tilvalg.content.rendered)}</p>
+                </div>
+                <div className='pakke-detaljer'>
+                    <div className='pakke-detaljer-container'>
+                        <p onClick={() => setSsl(true)} style={{display: ssl ? 'none' : 'block'}}><IoIosAddCircle className='add' />{!tilvalg.acf.ssl ? null : parse(tilvalg.acf.ssl)}</p>
+                        <p onClick={() => setApi(true)} style={{display: api ? 'none' : 'block'}}><IoIosAddCircle className="add" />{!tilvalg.acf.egen_api ? null : parse(tilvalg.acf.egen_api)}</p>
+                        <p onClick={() => setSome(true)} style={{display: some ? 'none' : 'block'}}><IoIosAddCircle className='add' />{!tilvalg.acf.some_marketing ? null : parse(tilvalg.acf.some_marketing)}</p>
+                        <p onClick={() => setBranding(true)} style={{display: branding ? 'none' : 'block'}}><IoIosAddCircle className='add' />{!tilvalg.acf.branding_identittet ? null : parse(tilvalg.acf.branding_identittet)}</p>
+                        <p onClick={() => setTekstForfatning(true)} style={{display: tekstForfatning ? 'none' : 'block'}}><IoIosAddCircle className='add' />{!tilvalg.acf.tekstforfatning ? null : parse(tilvalg.acf.tekstforfatning)}</p>
+                        <p onClick={() => setLogo(true)} style={{display: logo ? 'none' : 'block'}}><IoIosAddCircle className='add' />{!tilvalg.acf.logodesign ? null : parse(tilvalg.acf.logodesign)}</p>
+                    </div>
+                </div>
+            </label>
         </div>
-        <div className='tilvalgcard'>
-        <input
-            type="radio"
-            name="topping"
-            value="Enterprise"
-            id="enterprise"
-            checked={option === "Enterprise"}
-            onChange={onOptionChange}
-        />
-         <label htmlFor="enterprise" className='card-title'>Enterprise</label>
-         <div className='card-line'></div>
-            <div className='tilvalg'>
-                <TiTick className='TiTick'/>
-                <p>Hjemmeside med 1-8 undersider</p>
-            </div>
-            <div className='tilvalg'>
-                <TiTick className='TiTick'/>
-                <p>Udviklet prototype i Figma</p>
-            </div>
-            <div className='tilvalg'>
-                <TiTick className='TiTick'/>
-                <p>Pro SEO Pakke</p>
-            </div>
-            <div className='tilvalg'>
-                <TiTick className='TiTick'/>
-                <p>Hosting af hjemmeside</p>
-            </div>
-            <div className='tilvalg'>
-                <TiTick className='TiTick'/>
-                <p>6 Måneders vedligholdse og performance</p>
-            </div>
-            <div className='tilvalg'>
-                <TiTick className='TiTick'/>
-                <p>CMS System</p>
-            </div>
-            <div className='tilvalg'>
-                <TiTick className='TiTick'/>
-                <p>9-17  Teknisk Support</p>
-            </div>
-            <div className='card-line'></div>
-            <button className='btn'>Vælg pakke</button>
-        </div>
-        <div className='tilvalgcard'>
-            <input
-                type="radio"
-                name="topping"
-                value="Imperial"
-                id="imperial"
-                checked={option === "Imperial"}
-                onChange={onOptionChange}
-            />
-            <label htmlFor="imperial" className='card-title'>Imperial</label>
-            <div className='card-line'></div>
-            <div className='tilvalg'>
-                <TiTick className='TiTick'/>
-                <p>Hjemmeside med ubegrænsede undersider</p>
-            </div>
-            <div className='tilvalg'>
-                <TiTick className='TiTick'/>
-                <p>Udviklet prototype i Figma</p>
-            </div>
-            <div className='tilvalg'>
-                <TiTick className='TiTick'/>
-                <p>Pro SEO Pakke</p>
-            </div>
-            <div className='tilvalg'>
-                <TiTick className='TiTick'/>
-                <p>Hosting af hjemmeside</p>
-            </div>
-            <div className='tilvalg'>
-                <TiTick className='TiTick'/>
-                <p>6 Måneders vedligholdse og performance</p>
-            </div>
-            <div className='tilvalg'>
-                <TiTick className='TiTick'/>
-                <p>CMS System</p>
-            </div>
-            <div className='tilvalg'>
-                <TiTick className='TiTick'/>
-                <p>24/7  Teknisk Support</p>
-            </div>
-            <div className='tilvalg'>
-                <TiTick className='TiTick'/>
-                <p>Mindre updateringer indenfor 24 timer</p>
-            </div>
-            <div className='card-line'></div>
-            <button className='btn'>Vælg pakke</button>
-        </div>
-        <div className='tilvalgcard'>
-            <p>
-                Valgt pakke:<strong> {option}</strong>
-            </p>
-        </div>
-        
-    </section>
+    </div>
 
   )}
 

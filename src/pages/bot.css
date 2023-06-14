@@ -1,0 +1,8 @@
+#si-wrapper .silc-btn-button.silc-btn-button-color {
+    background-color: var(--color-3)!important;
+}
+
+#si-wrapper.si-livechat .silc-btn-button {
+    background-image: url(../assets/Chatbotlogo.png)!important;
+}
+

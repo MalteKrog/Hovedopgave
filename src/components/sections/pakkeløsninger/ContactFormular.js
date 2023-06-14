@@ -29,9 +29,6 @@ const ContactFormular = ({showContact, setShowContact, handleSubmit, post, hosti
                                 <p style={{display: post.acf.pakkeydelsefire ? 'block' : 'none'}}><FiCheck className='check'/>{parse(post.acf.pakkeydelsefire)}</p>
                                 <p style={{display: post.acf.pakkeydelsefem ? 'block' : 'none'}}><FiCheck className='check'/>{parse(post.acf.pakkeydelsefem)}</p>
                                 <p style={{display: post.acf.pakkeydelseseks ? 'block' : 'none'}}><FiCheck className='check'/>{parse(post.acf.pakkeydelseseks)}</p>
-                                <p style={{display: post.acf.pakkeydelsesyv ? 'block' : 'none'}}><FiCheck className='check'/>{parse(post.acf.pakkeydelsesyv)}</p>
-                                <p style={{display: post.acf.pakkeydelseotte ? 'block' : 'none'}}><FiCheck className='check'/>{parse(post.acf.pakkeydelseotte)}</p>
-                                <p style={{display: post.acf.pakkeydelseni ? 'block' : 'none'}}><FiCheck className='check'/>{parse(post.acf.pakkeydelseni)}</p>
                             </div>
                         </div>
                         <br />

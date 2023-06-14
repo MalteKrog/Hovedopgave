@@ -8,7 +8,9 @@ const FpBg = () => {
     pathElement.setAttribute('style', 'stroke-dasharray:'+pathElement.getTotalLength()+';stroke-dashoffset:'+pathElement.getTotalLength())
 })
   return (
-      <svg clasName='svg' viewBox="0 0 1728 917" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+      <svg clasName='svg' viewBox="0 0 1728 917" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" style={{
+      top: "-100px",
+      position: "relative"}}>
         <rect x="0.00012207" width="1728" height="1117" fill="url(#pattern0)"/>
         <path className='path' data-index="0" d="M-250 575C-36.4998 561 220.9 914.5 528.5 790.5C913 635.5 973 460.5 1825 482" stroke="url(#paint0_linear_2_50)" stroke-width="0.5"/>
         <path className='path' data-index="1" d="M-221.461 455.83C-8.14933 472.455 196.145 859.083 518.297 780.269C920.988 681.751 1005.36 517.11 1845.56 660.029" stroke="url(#paint1_linear_2_50)" stroke-width="0.5"/>

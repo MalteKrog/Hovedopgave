@@ -37,9 +37,6 @@ const Card = ({ post, ssl, setSsl, api, setApi, some, setSome, branding, setBran
                                 <p style={{display: post.acf.pakkeydelsefire ? 'block' : 'none'}}><FiCheck className='check'/>{parse(post.acf.pakkeydelsefire)}</p>
                                 <p style={{display: post.acf.pakkeydelsefem ? 'block' : 'none'}}><FiCheck className='check'/>{parse(post.acf.pakkeydelsefem)}</p>
                                 <p style={{display: post.acf.pakkeydelseseks ? 'block' : 'none'}}><FiCheck className='check'/>{parse(post.acf.pakkeydelseseks)}</p>
-                                <p style={{display: post.acf.pakkeydelsesyv ? 'block' : 'none'}}><FiCheck className='check'/>{parse(post.acf.pakkeydelsesyv)}</p>
-                                <p style={{display: post.acf.pakkeydelseotte ? 'block' : 'none'}}><FiCheck className='check'/>{parse(post.acf.pakkeydelseotte)}</p>
-                                <p style={{display: post.acf.pakkeydelseni ? 'block' : 'none'}}><FiCheck className='check'/>{parse(post.acf.pakkeydelseni)}</p>
                             </div>
                         </div>
                         <br />
@@ -48,7 +45,7 @@ const Card = ({ post, ssl, setSsl, api, setApi, some, setSome, branding, setBran
                                 <p className='valgte-tilvalg' onClick={() => setSsl(false)} style={{display: ssl ? 'block' : 'none'}}><IoIosRemoveCircle className='check'/>SSL certifikat</p>
                                 <p className='valgte-tilvalg' onClick={() => setApi(false)} style={{display: api ? 'block' : 'none'}}><IoIosRemoveCircle className='check'/>Egen API</p>
                                 <p className='valgte-tilvalg' onClick={() => setSome(false)} style={{display: some ? 'block' : 'none'}}><IoIosRemoveCircle className='check'/>SoMe Marketing</p>
-                                <p className='valgte-tilvalg' onClick={() => setBranding(false)} style={{display: branding ? 'block' : 'none'}}><IoIosRemoveCircle className='check'/>Branding og Visuel identittet</p>
+                                <p className='valgte-tilvalg' onClick={() => setBranding(false)} style={{display: branding ? 'block' : 'none'}}><IoIosRemoveCircle className='check'/>Branding og Visuel identitet</p>
                                 <p className='valgte-tilvalg' onClick={() => setTekstForfatning(false)} style={{display: tekstForfatning ? 'block' : 'none'}}><IoIosRemoveCircle className='check'/>Tekst Forfatning</p>
                                 <p className='valgte-tilvalg' onClick={() => setLogo(false)} style={{display: logo ? 'block' : 'none'}}><IoIosRemoveCircle className='check'/>Logo design</p>
                         <div className='button-header'>

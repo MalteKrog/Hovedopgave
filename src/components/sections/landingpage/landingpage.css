@@ -76,6 +76,15 @@
     animation-delay: 0.6s;
 }
 
+.onboarding {
+    display: none;
+}
+
+.bg {
+    position: relative;
+    top: 1000px;
+}
+
 @keyframes dash {
     100% {
         stroke-dashoffset: 0;
@@ -92,7 +101,6 @@
         justify-content:space-around;
         width: 100%;
     }
-
     
     .flex-container > h1 {
         text-align: left;
@@ -100,6 +108,43 @@
 
     .flexbox {
         right: 200px;
+    }
+
+    .onboarding {
+        width: 250px;
+        display: block;
+        position: absolute;
+        right: 100px;
+        top: 82vh;
+        animation: fade 15s;
+        animation-iteration-count: inherit;
+        opacity: 0;
+    }
+
+    .onboard-text {
+        font-size: 20px;
+    }
+
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+        10% {
+            opacity: 1;
+        }
+        99% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .arrow {
+        position: relative;
+        left: 150px;
+        transform: rotate(90deg);
+        width: 100px;
     }
 }
 @media screen  and (min-width: 1100px) {

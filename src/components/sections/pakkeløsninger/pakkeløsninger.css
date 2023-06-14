@@ -17,8 +17,8 @@ section {
 }
 
 .noselect {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    width: 400px;
+    align-self: flex-start;
 }
 
 .tilvalgcard:last-child {
@@ -34,7 +34,7 @@ strong {
 .cards-container {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -87,6 +87,7 @@ strong {
 
 
 .card {
+    min-width: 300px;
     max-width: 300px;
     background: var(--color-bg-variant);
     padding: 20px;
@@ -112,9 +113,9 @@ strong {
 }
 
 .tilvalgcard {
-    margin: 0 40px;
+
     display: flex;
-    flex-direction: column;
+flex-direction: column;
     justify-content: space-between;
     max-width: 100%;
     background: var(--color-bg-variant);
@@ -168,9 +169,10 @@ input[type='radio'] {
 
 .pakke-detaljer-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     text-align: left;
     cursor: pointer;
+    flex-direction: column;
 }
 .pakke-detaljer > div > p {
     display: flex;
